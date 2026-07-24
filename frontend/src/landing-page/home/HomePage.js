@@ -13,6 +13,7 @@ function HomePage() {
         <>
         <Navbar/>
         <HeroScection/>
+        <br></br>
         <Awards/>
         <Stats/>
         <Pricing/>
