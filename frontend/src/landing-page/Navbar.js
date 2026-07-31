@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 function NavBar() {
   return (
-    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
+      <div class="container">
+        <Link class="navbar-brand" to={"/"}>
          <img src="/Media/logo.svg" style={{width:"20%"}} alt="Logo"/>
-        </a>
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -22,29 +23,29 @@ function NavBar() {
           <form class="d-flex" role="search">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active ms-5" aria-current="page" href="#">
+              <Link class="nav-link active ms-5" aria-current="page" to={"/Signup"}>
                 Sign up
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link active ms-4" href="#">
+              <Link class="nav-link active ms-4" to={"/About"}>
                 About
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link active ms-4" href="#">
+              <Link class="nav-link active ms-4" to={"/Product"}>
                 Product
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link active ms-4" href="#">
+              <Link class="nav-link active ms-4" to={"/Pricing"}>
                 Pricing
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link active ms-4" href="#">
+              <Link class="nav-link active ms-4" to={"/Support"}>
                 Support
-              </a>
+              </Link>
             </li>
             
                 
